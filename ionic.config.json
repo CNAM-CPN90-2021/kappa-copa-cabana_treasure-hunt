@@ -1,0 +1,7 @@
+{
+  "name": "hunter_front",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
