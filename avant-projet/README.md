@@ -1,7 +1,0 @@
-- Scénario Utilisateur
-- Fonctionnalités attendues, point de difficulté
-- Mise en page et apparence
-- Liste de composants
-- Librairies externes au besoin
-- Format de données
-- Navigation
