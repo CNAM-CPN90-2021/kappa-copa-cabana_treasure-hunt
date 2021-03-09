@@ -1,6 +1,6 @@
 # **_Chasse au Trésor_**
 
-## ![Zombie](public/assets/img/mi-zombie.jpg)
+## ![Zombie](public/assets/img/zombie.jpg)
 
 ---
 
