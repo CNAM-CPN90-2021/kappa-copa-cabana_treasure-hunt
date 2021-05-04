@@ -1,5 +1,5 @@
-export const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN
+export const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN
 
-if (!MAPBOX_TOKEN) {
+if (!MAPBOX_ACCESS_TOKEN) {
 	throw new Error("NO MAPBOX ACCESS TOKEN")
 }
