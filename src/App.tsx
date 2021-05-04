@@ -22,6 +22,7 @@ import "@ionic/react/css/display.css"
 /* Theme variables */
 import "./theme/variables.css"
 import Scenarios, { InfectedScenario } from "./pages/Scenarios/index"
+import Map from "./pages/Map"
 
 const App: React.FC = () => (
 	<IonApp>
@@ -38,6 +39,9 @@ const App: React.FC = () => (
 				</Route>
 				<Route exact path="/scenarios/infected">
 					<InfectedScenario />
+				</Route>
+				<Route exact path="/map">
+					<Map />
 				</Route>
 			</IonRouterOutlet>
 		</IonReactRouter>

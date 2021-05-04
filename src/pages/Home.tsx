@@ -28,7 +28,7 @@ const Home: React.FC = () => {
 						src="https://raw.githubusercontent.com/CNAM-CPN90-2021/kappa-copa-cabana_treasure-hunt/main/public/assets/img/zombie.jpg"
 						alt="ZOMBIE"
 					/>
-					<IonCardContent>
+					<IonCardContent className="description">
 						<IonCardSubtitle>15 novembre 2050...</IonCardSubtitle>
 						Un virus s'est abattu sur notre monde. Les premières personnes
 						touchées inquiètent énormément les scientifiques du monde entier.
