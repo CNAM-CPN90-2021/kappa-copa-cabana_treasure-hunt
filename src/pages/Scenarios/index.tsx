@@ -1,15 +1,10 @@
 import {
 	IonBackButton,
-	IonButton,
 	IonButtons,
-	IonCard,
-	IonCardTitle,
 	IonContent,
 	IonHeader,
 	IonItem,
 	IonItemGroup,
-	IonLabel,
-	IonList,
 	IonPage,
 	IonTitle,
 	IonToolbar
@@ -31,10 +26,10 @@ const Scenarios: React.FC = () => {
 
 			<IonContent fullscreen>
 				<IonItemGroup>
-					<IonItem button routerLink="/map">
+					<IonItem button routerLink="/scenarios/infected">
 						Mode Infecté
 					</IonItem>
-					<IonItem button routerLink="/map">
+					<IonItem button routerLink="/barcode">
 						Mode Scientifique
 					</IonItem>
 				</IonItemGroup>

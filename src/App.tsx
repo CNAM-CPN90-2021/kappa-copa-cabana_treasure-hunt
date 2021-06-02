@@ -23,6 +23,7 @@ import "@ionic/react/css/display.css"
 import "./theme/variables.css"
 import Scenarios, { InfectedScenario } from "./pages/Scenarios/index"
 import Map from "./pages/Map"
+import Barcode from "./pages/Barcode"
 
 const App: React.FC = () => (
 	<IonApp>
@@ -42,6 +43,9 @@ const App: React.FC = () => (
 				</Route>
 				<Route exact path="/map">
 					<Map />
+				</Route>
+				<Route exact path="/barcode">
+					<Barcode />
 				</Route>
 			</IonRouterOutlet>
 		</IonReactRouter>
