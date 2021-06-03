@@ -44,9 +44,13 @@ Lors d'une session de test, un scientifique isolé dans une pièce de test, fait
 
 
 ---
+https://www.figma.com/file/ybsemGBrsrTKB3NETSt7EQ/Untitled?node-id=0%3A1
+---
 Idées :
 
 ````
 Comment les scientifiques réagissent à la contamination de leur collègue ? 
 Que mettent en places les scientifiques pour contrôler l'évolution du virus chez leur collègue ?
+
+
 
