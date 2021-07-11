@@ -7,22 +7,28 @@ import {
 	IonTitle,
 	IonToolbar
 } from "@ionic/react"
+// import { Marker } from "mapbox-gl"
 import React, { useState } from "react"
-import ReactMapGL, { Layer } from "react-map-gl"
-import { MAPBOX_ACCESS_TOKEN } from "../config"
+import ReactMapGL, { Marker } from "react-map-gl"
+import { useRealPosition, useSimulatedPosition } from "../hooks/usePosition"
+import distance from "@turf/distance"
+import { point } from "@turf/helpers"
 
 const Map: React.FC = () => {
-	const layer = {
-		source: ""
-	}
-
 	const [viewPort, setViewPort] = useState({
 		width: "100%",
-		height: "100%",
+		height: "10",
 		latitude: 49.2536,
 		longitude: 4.0354,
-		zoom: 8
+		zoom: 5
 	})
+
+	const position = useSimulatedPosition()
+
+	const marker = {
+		offsetLeft: (-1 * 30) / 2,
+		offsetTop: (1 * 30) / 2
+	}
 
 	return (
 		<IonPage>
@@ -52,7 +58,22 @@ const Map: React.FC = () => {
 								zoom: number
 							}>
 						) => setViewPort(newViewPort)}
-					></ReactMapGL>
+					>
+						<Marker
+							{...marker}
+							latitude={position?.latitude ?? 0}
+							longitude={position?.longitude ?? 0}
+						>
+							<div
+								style={{
+									background: "red",
+									height: "30px",
+									width: "30px",
+									borderRadius: "50%"
+								}}
+							/>
+						</Marker>
+					</ReactMapGL>
 				</div>
 				<p>Description</p>
 			</IonContent>
